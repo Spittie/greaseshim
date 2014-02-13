@@ -30,6 +30,5 @@ function GM_log(_message) {
 };
 
 self.port.on('load-userscript', function(script) {
-  test = new String(script)
   eval(script);
 });

@@ -14,6 +14,10 @@ function GM_deleteValue(_name) {
   localStorage.removeItem(_name);
 };
 
+function GM_listValues() {
+  return localStorage;
+}
+
 function GM_setClipboard(_text) {
   self.port.emit("GM_setClipboard", _text);
 };

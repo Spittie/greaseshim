@@ -7,6 +7,7 @@ function GM_setValue(_name, _value) {
 };
 
 function GM_getValue(_name, _default) {
+  if (localStorage[_name] === null && _default === null) return undefined;
   return localStorage[_name] || _default;
 };
 
@@ -15,8 +16,8 @@ function GM_deleteValue(_name) {
 };
 
 function GM_listValues() {
-  return localStorage;
-}
+  return Object.keys(localStorage);
+};
 
 function GM_setClipboard(_text) {
   self.port.emit("GM_setClipboard", _text);
@@ -49,7 +50,6 @@ GM_info.scriptWillUpdate = true;
 function GM_registerMenuCommand(_caption, _commandFunc, _accessKey) {
   return null;
 }
-
 
 self.port.on("load-userscript", function(_script) {
   eval(_script);

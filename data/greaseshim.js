@@ -1,9 +1,3 @@
-// @grant        GM_getValue
-// @grant        GM_setValue
-// @grant        GM_deleteValue
-// @grant        GM_openInTab
-// @grant        GM_xmlhttpRequest
-
 function GM_openInTab(_url) {
   self.port.emit("GM_openInTab", _url);
 };

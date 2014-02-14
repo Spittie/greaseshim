@@ -32,10 +32,12 @@ function GM_log(_message) {
 function GM_xmlhttpRequest(_details) {
   //Ugly hack? Race condition? Memory leak?
   _onload = _details.onload;
+  _context = _details.context;
   self.port.emit("GM_xmlhttpRequest", _details);
 };
 
 self.port.on("callback_GM_xmlhttpRequest", function(_response) {
+  _response.context = _context;
   _onload(_response);
 });
 

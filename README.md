@@ -13,6 +13,7 @@ simple shim to convert userscripts to Firefox-sdk extensions.
 - [GM_setValue](http://wiki.greasespot.net/GM_deleteValue) (using localStorage)
 - [GM_getValue](http://wiki.greasespot.net/GM_getValue) (using localStorage)
 - [GM_deleteValue](http://wiki.greasespot.net/GM_deleteValue) (using localStorage)
+- [GM_listValues](http://wiki.greasespot.net/GM_listValues) (using localStorage)
 - [GM_openInTab](http://wiki.greasespot.net/GM_openInTab)
 - [GM_log](http://wiki.greasespot.net/GM_log)
 - [GM_xmlhttpRequest](http://wiki.greasespot.net/GM_xmlhttpRequest)
@@ -27,7 +28,6 @@ GM_xmlhttpRequest might have a race condition in case of many requests.
 
 ## Missing
 - [Metadata Block](http://wiki.greasespot.net/Metadata_Block)
-- [GM_listValues](http://wiki.greasespot.net/GM_listValues)
 - [GM_getResourceText](http://wiki.greasespot.net/GM_getResourceText)
 - [GM_getResourceURL](http://wiki.greasespot.net/GM_getResourceURL)
 - [unsafeWindow](http://wiki.greasespot.net/UnsafeWindow)

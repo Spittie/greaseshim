@@ -20,7 +20,8 @@ function GM_listValues() {
 };
 
 function GM_setClipboard(_text) {
-  self.port.emit("GM_setClipboard", _text);
+//   Break on Firefox mobile
+//   self.port.emit("GM_setClipboard", _text);
 };
 
 //Deprecated

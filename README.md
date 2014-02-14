@@ -25,6 +25,7 @@ GM_xmlhttpRequest might have a race condition in case of many requests.
 ## Stubs
 - [GM_registerMenuCommand](http://wiki.greasespot.net/GM_registerMenuCommand)
 - [GM_info](http://wiki.greasespot.net/GM_info) (Some hardcoded values)
+- [GM_setClipboard](http://wiki.greasespot.net/GM_setClipboard) (Implemented, but sdk/clipboard doesn't work on Firefox mobile)
 
 ## Missing
 - [Metadata Block](http://wiki.greasespot.net/Metadata_Block)

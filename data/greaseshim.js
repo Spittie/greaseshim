@@ -29,17 +29,23 @@ function GM_xmlhttpRequest(_details) {
   self.port.emit("GM_xmlhttpRequest", _details);
 };
 
+self.port.on("callback_GM_xmlhttpRequest", function(_response) {
+  _onload(_response);
+});
+
 function GM_addStyle(_css) {
   self.port.emit("GM_addStyle", _css);
 }
+
+var GM_info = new Object();
+GM_info.version = '1.1.5';
+GM_info.scriptWillUpdate = true;
 
 //To do
 function GM_registerMenuCommand(_caption, _commandFunc, _accessKey) {
   return null;
 }
-self.port.on("callback_GM_xmlhttpRequest", function(_response) {
-  _onload(_response);
-});
+
 
 self.port.on("load-userscript", function(_script) {
   eval(_script);

@@ -44,7 +44,7 @@ function GM_addStyle(_css) {
 }
 
 var GM_info = new Object();
-GM_info.version = '1.1.5';
+GM_info.version = '1.15';
 GM_info.scriptWillUpdate = true;
 
 //To do

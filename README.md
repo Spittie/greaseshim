@@ -23,10 +23,10 @@ GM_xmlhttpRequest might have a race condition in case of many requests.
 
 ## Stubs
 - [GM_registerMenuCommand](http://wiki.greasespot.net/GM_registerMenuCommand)
+- [GM_info](http://wiki.greasespot.net/GM_info) (Some hardcoded values)
 
 ## Missing
 - [Metadata Block](http://wiki.greasespot.net/Metadata_Block)
-- [GM_info](http://wiki.greasespot.net/GM_info)
 - [GM_listValues](http://wiki.greasespot.net/GM_listValues)
 - [GM_getResourceText](http://wiki.greasespot.net/GM_getResourceText)
 - [GM_getResourceURL](http://wiki.greasespot.net/GM_getResourceURL)

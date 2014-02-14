@@ -35,3 +35,4 @@ GM_xmlhttpRequest might have a race condition in case of many requests.
 
 ## Example of userscripts working:
 - [4chan X](https://github.com/Spittie/4chan-x)
+- [OneeChan](https://github.com/seaweedchan/OneeChan)

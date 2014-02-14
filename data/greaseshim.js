@@ -29,6 +29,10 @@ function GM_xmlhttpRequest(_details) {
   self.port.emit("GM_xmlhttpRequest", _details);
 };
 
+//To do
+function GM_registerMenuCommand(_caption, _commandFunc, _accessKey) {
+  return null;
+}
 self.port.on("callback_GM_xmlhttpRequest", function(_response) {
   _onload(_response);
 });

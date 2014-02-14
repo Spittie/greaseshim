@@ -15,5 +15,13 @@ simple shim to convert userscripts to Firefox-sdk extensions.
 - [GM_deleteValue](http://wiki.greasespot.net/GM_deleteValue) (using localStorage)
 - [GM_openInTab](http://wiki.greasespot.net/GM_openInTab)
 - [GM_log](http://wiki.greasespot.net/GM_log)
+- [GM_xmlhttpRequest](http://wiki.greasespot.net/GM_xmlhttpRequest)
 
 Implemented with localStorage mean that the script can access data only on the site where it's saved.
+GM_xmlhttpRequest might have a race condition in case of many requests.
+
+## Stubs
+- [GM_registerMenuCommand](http://wiki.greasespot.net/GM_registerMenuCommand)
+
+## Example of userscripts working:
+- [4chan X](https://github.com/Spittie/4chan-x)

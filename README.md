@@ -16,7 +16,7 @@ simple shim to convert userscripts to Firefox-sdk extensions.
 - [GM_listValues](http://wiki.greasespot.net/GM_listValues) (using localStorage)
 - [GM_openInTab](http://wiki.greasespot.net/GM_openInTab)
 - [GM_log](http://wiki.greasespot.net/GM_log)
-- [GM_xmlhttpRequest](http://wiki.greasespot.net/GM_xmlhttpRequest)
+- [GM_xmlhttpRequest](http://wiki.greasespot.net/GM_xmlhttpRequest) (limited)
 - [GM_addStyle](http://wiki.greasespot.net/GM_addStyle)
 
 Implemented with localStorage mean that the script can access data only on the site where it's saved.

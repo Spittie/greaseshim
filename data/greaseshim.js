@@ -9,8 +9,8 @@ function GM_setValue(_name, _value) {
 };
 
 function GM_getValue(_name, _default) {
-  if (localStorage[_name] === null && _default === null) return;
-  return localStorage[_name] || _default;
+  if (localStorage[_name] === null && _default === null) return null;
+  return (localStorage[_name] || _default);
 };
 
 function GM_deleteValue(_name) {
@@ -23,8 +23,7 @@ function GM_listValues() {
 };
 
 function GM_setClipboard(_text) {
-//   Break on Firefox mobile
-//   self.port.emit("GM_setClipboard", _text);
+  self.port.emit("GM_setClipboard", _text);
 };
 
 //Deprecated

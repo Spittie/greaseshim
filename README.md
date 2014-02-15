@@ -10,7 +10,7 @@ simple shim to convert userscripts to Firefox-sdk extensions.
 - Build with `cfx xpi` or `cfx xpi --force-mobile`
 
 ## What's implemented
-- [GM_setValue](http://wiki.greasespot.net/GM_deleteValue) (using localStorage)
+- [GM_setValue](http://wiki.greasespot.net/GM_setValue) (using localStorage)
 - [GM_getValue](http://wiki.greasespot.net/GM_getValue) (using localStorage)
 - [GM_deleteValue](http://wiki.greasespot.net/GM_deleteValue) (using localStorage)
 - [GM_listValues](http://wiki.greasespot.net/GM_listValues) (using localStorage)

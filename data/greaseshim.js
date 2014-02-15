@@ -1,18 +1,21 @@
 function GM_openInTab(_url) {
   self.port.emit("GM_openInTab", _url);
+  return; // Should return the Window object
 };
 
 function GM_setValue(_name, _value) {
   localStorage[_name] = _value;
+  return;
 };
 
 function GM_getValue(_name, _default) {
-  if (localStorage[_name] === null && _default === null) return undefined;
+  if (localStorage[_name] === null && _default === null) return;
   return localStorage[_name] || _default;
 };
 
 function GM_deleteValue(_name) {
   localStorage.removeItem(_name);
+  return;
 };
 
 function GM_listValues() {
@@ -27,6 +30,7 @@ function GM_setClipboard(_text) {
 //Deprecated
 function GM_log(_message) {
   console.log(_message);
+  return;
 };
 
 function GM_xmlhttpRequest(_details) {
@@ -51,7 +55,7 @@ GM_info.scriptWillUpdate = true;
 
 //To do
 function GM_registerMenuCommand(_caption, _commandFunc, _accessKey) {
-  return null;
+  return;
 }
 
 self.port.on("load-userscript", function(_script) {
